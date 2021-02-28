@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- =============    CSS    ================= -->
+    <link rel="stylesheet" href="../assets/css/dashboard_boat.css">
+    <link rel="stylesheet" href="../assets/css/dashboard_sidebar.css">
+
+
+    <!-- ===============    FONT AWESOME   ============== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+</head>
+
+<body>
+    <sidebar class="sidebar">
+        <div class="profil_container">
+            <img src="../assets/images/profil_pic_sidebar/profil_pic.jpg" alt="" class="profil_img">
+            <h4 class="sidebar_profile_title">Maria</h4>
+        </div>
+
+
+        <a href="dashboard_home.html"> <i class="fas fa-desktop"></i> <span>Accueil</span> </a>
+        <a href="dashboard_calendar.html"> <i class="fas fa-calendar-alt"></i><span>Calendrier</span> </a>
+        <a href="#"> <i class="fas fa-anchor"></i><span>Bateaux</span> </a>
+        <a href="dashboard_account.html"> <i class="fas fa-users"></i> <span>Comptes</span> </a>
+        <a href="../../index.html"> <i class="fas fa-arrow-left"></i></i> <span>Site</span> </a>
+    </sidebar>
+
+    <main class="main">
+        <header class="header">
+            <div class="logo">
+                <h3 class="logo_title">AfYachting</h3>
+            </div>
+
+            <div class="logout">
+                <a href="" class="logout">Déconnexion</a>
+            </div>
+        </header>
+
+        <section class="boat_link_container">
+            <div class="link_boat_box">
+                <a href="dashboard_boat_location_list.html" class="boat_link">Voir les bateaux en location</a>
+
+                <a href="dashboard_boat_vente_list.html" class="boat_link">Voir les bateaux en vente </a>
+            </div>
+        </section>
+        <section class="form_boat_container">
+            <div class="main_container">
+                <form action="" class="form_boat">
+
+                    <div class="form_boat_left">
+
+                        <div class="form_boat_box">
+                            <label for="file_img">Image</label>
+                            <input type="file" name="" id="file_img" accept="image/png, image/jpeg" class="input_file">
+                        </div>
+
+                        <div class="form_boat_box">
+                            <input type="text" name="" id="name" class="input" placeholder="Nom du bateau">
+                        </div>
+
+                        <div class="form_boat_box">
+                            <input type="number" name="" id="minimum_price" class="input" placeholder="Prix minimum">
+                        </div>
+
+                        <div class="form_boat_box">
+                            <input type="number" name="" id="moto_power" class="input" placeholder="Puissance Moteur">
+                        </div>
+
+                        <div class="form_boat_box">
+                            <textarea name="" id="description"
+                                placeholder="Description : ex(Confort et rapidité pour une après-midi inoubliable)"
+                                class="description_boat_area"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form_boat_right">
+                        <div class="form_boat_box">
+                            <label for="boat_type">Type de bateau</label>
+                            <select name="boat" id="boat_type">
+                                <option value="coque rigide">Coque Rigide</option>
+                                <option value="coque semi rigide">Coque semi-Rigide</option>
+                                <option value="gamme prestige">Gamme Prestige</option>
+                            </select>
+
+                        </div>
+
+                        <div class="form_boat_box form_boat_option">
+                            <h2 class="option_title">Options</h2>
+                            <div class="options">
+                                <div class="equipment_options">
+                                    <h4 class="subtitle_options">Equipement</h4>
+
+                                    <div class="option_box">
+                                        <label for="towels">Serviettes</label>
+                                        <input type="checkbox" name="" id="towels">
+                                    </div>
+
+                                    <div class="option_box">
+                                        <label for="buoys">Bouées</label>
+                                        <input type="checkbox" name="" id="buoys">
+                                    </div>
+
+                                    <div class="option_box">
+                                        <label for="ladder">Echelle de bain</label>
+                                        <input type="checkbox" name="" id="ladder">
+                                    </div>
+
+                                    <div class="option_box">
+                                        <label for="protection">Housses de protection</label>
+                                        <input type="checkbox" name="" id="protection">
+                                    </div>
+
+                                    <div class="option_box">
+                                        <label for="water">Reservoir d'eau</label>
+                                        <input type="checkbox" name="" id="water">
+                                    </div>
+
+                                    <div class="option_box">
+                                        <label for="storage">Rangements</label>
+                                        <input type="checkbox" name="" id="storage">
+                                    </div>
+                                </div>
+
+                                <div class="equipment_options">
+                                    <h4 class="subtitle_options">Navigation</h4>
+
+                                    <div class="option_box">
+                                        <label for="hydrolic_direction">Direction Hydrolique</label>
+                                        <input type="checkbox" name="" id="hydrolic_direction" checked>
+                                    </div>
+
+                                    <div class="option_box">
+                                        <label for="gps">GPS</label>
+                                        <input type="checkbox" name="" id="gps" checked>
+                                    </div>
+
+                                    <div class="option_box">
+                                        <label for="sounder">Sondeurs</label>
+                                        <input type="checkbox" name="" id="sounder" checked>
+                                    </div>
+
+                                    <div class="option_box">
+                                        <label for="onboard_computer">Ordinateur de bord</label>
+                                        <input type="checkbox" name="" id="onboard_computer" checked>
+                                    </div>
+                                </div>
+
+                                <div class="equipment_options">
+                                    <h4 class="subtitle_options">Sécurité</h4>
+
+                                    <div class="option_box">
+                                        <label for="armement">Armement</label>
+                                        <input type="checkbox" name="" id="armement" checked>
+                                    </div>
+
+                                    <div class="option_box">
+                                        <label for="pump">Pompe de cale</label>
+                                        <input type="checkbox" name="" id="pump" checked>
+                                    </div>
+
+                                    <div class="option_box">
+                                        <label for="electric_pump">Pompe électrique</label>
+                                        <input type="checkbox" name="" id="electric_pump" checked>
+                                    </div>
+
+                                    <div class="option_box">
+                                        <label for="buoy_save">Bouée de sauvetage</label>
+                                        <input type="checkbox" name="" id="buoy_save" checked>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+                <button type="submit" class="button_submit">Ajouter le bateau</button>
+
+            </div>
+
+        </section>
+    </main>
+</body>
+
+</html>

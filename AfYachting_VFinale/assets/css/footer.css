@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+/*********************************************   VARIABLES   ******************************************/
+
+:root {
+    --header-height: 3rem;
+    --nav-width: 324px;
+    /********************************   FONT WEIGHT ******************************************/
+    --font-medium: 400;
+    --font-semi-bold: 500;
+    --font-bold: 600;
+    /********************************     COLORS    *******************************************/
+    --first-color: #172441;
+    --first-color-darken: #01101f;
+    --second-color: #CC4B2C;
+    --second-color-dark: #a12405;
+
+    --text-color: #b8ab9a;
+    --text-color-darken: #837057;
+    --background-color-light: #EAE7E6;
+    --background-color-lighten: #FFFAFA;
+    --background-color-light-blue: #f0f5fc;
+    /********************************   FONT-TYPO   ******************************************/
+    --body-font: 'Poppins', sans-serif;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.3rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
+    /********************************    MARGENES   ******************************************/
+    --mb-1: .5rem;
+    --mb-2: 1rem;
+    --mb-3: 1.5rem;
+    --mb-4: 2rem;
+    --mb-5: 2.5rem;
+    /********************************    Z-index    ******************************************/
+    --z-fixed: 100;
+}
+
+@media screen and(min-width: 768px) {
+     :root {
+        --h1-font-size: 2.25rem;
+        --h2-font-size: 1.5rem;
+        --h3-font-size: 1.25rem;
+        --normal-font-size: 1rem;
+        --small-font-size: .875rem;
+        --smaller-font-size: .813rem;
+    }
+}
+
+
+/*************************************     RESET HTML     **************************************/
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+h3 {
+    font-weight: var(--font-semi-bold);
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+/*********************************************   CLASS CSS   ******************************************/
+
+
+
+
+.footer{
+    width: 100%;
+    height: calc(100vh - var(--header-height));
+    display: flex;
+    flex-direction: column;
+    background-color: var(--first-color);
+}
+
+.footer_container{
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer_logo{
+    width: 250px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer_logo img{
+    width: 150px;
+    height: 160px;
+}
+
+.footer_contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+}
+
+.footer_title{
+    color: #FFF;
+}
+
+.footer_contact_box{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.footer_contact_text{
+    color: #FFF;
+    width: 100%;
+    text-align: center;
+    overflow-wrap: break-word;
+}
+
+.contact_text{
+    width: 100%;
+    text-align: center;
+    overflow-wrap: break-word;
+}
+
+.contact_text:hover{
+    text-decoration: underline;
+}
+
+.footer_copyright{
+    height: 25vh;
+    width: 100%;
+    background-color: var(--first-color-darken);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_copyright_title{
+    font-size: .9rem;
+    text-align: center;
+    color: rgba(255,255,255,.4);
+    margin-top: var(--mb-4);
+}
+
+.brand, .c_gen, .privacy{
+    color: var(--text-color-darken);
+}
+
+
+.brand:hover, .c_gen:hover, .privacy:hover{
+    text-decoration: none;
+    color: var(--background-color-light);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px)
+{
+    .footer_logo{
+        width: 360px;
+        height: 360px;
+    }
+
+    .footer_logo img{
+        width: 300px;
+        height: 360px;
+    }
+
+    .footer_title{
+        font-size: 1.5rem;
+    }
+
+    .footer_contact{
+        margin: .5rem 0 0 0 ;
+    }
+
+    .footer_contact_text,.contact_text{
+        margin: .5rem 0 0 0 ;
+        font-size: 1.3rem;
+    }
+
+    .footer_copyright_title{
+        font-size: 1.5rem;
+    }
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--==========   CSS   ==========-->
+    <link rel="stylesheet" href="../assets/css/compte.css">
+    <link rel="stylesheet" href="../assets/css/nav_bar.css">
+
+
+    <!--==========   BOXICONS   ==========-->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Inscription</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav_bar">
+            <div class="nav_bar_logo_container">
+                <a href="compte.html" class="nav_bar_logo">Connexion</a>
+            </div>
+
+            <div class="nav_bar_toggle" id="nav_bar_toggle">
+                <i class="bx bx-menu"></i>
+            </div>
+
+            <div class="nav_bar_menu" id="nav_bar_menu">
+                <div class="nav_bar_close" id="nav_bar_close">
+                    <i class="bx bx-x"></i>
+                </div>
+
+                <ul class="nav_bar_list">
+                    <li class="nav_bar_item"><a href="../index.html" class="nav_bar_link active">Accueil</a></li>
+                    <li class="nav_bar_item"><a href="location_selection.html" class="nav_bar_link">Location</a>
+                    </li>
+                    <li class="nav_bar_item"><a href="vente.html" class="nav_bar_link">Vente</a></li>
+                    <li class="nav_bar_item"><a href="contact.html" class="nav_bar_link">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!--==========   MAIN   ==========-->
+    <div class="login">
+        <div class="login_content">
+            <div class="login_img">
+                <img src="../assets/images/compte/header_compte.jpg" alt="">
+            </div>
+
+            <div class="login_form">
+                <form action="" method="post" class="login_register" id="login_register">
+                    <h1 class="login_title">
+                        Connectez Vous
+                    </h1>
+
+                    <div class="login_box">
+                        <i class="bx bx-user login_icon"></i>
+                        <input type="text" placeholder="Username" class="login_input">
+                    </div>
+
+                    <div class="login_box">
+                        <i class="bx bx-lock login_icon"></i>
+                        <input type="password" placeholder="Password" class="login_input">
+                    </div>
+
+
+                    <a href="#" class="login_forgot">Mot de passe oublié ? </a>
+
+                    <!--TODO: IMPLEMENT DATA PROCESSING WHILE SUBMITTING -->
+                    <!--IMPORTANT !!  DO NOT CHANGE a href to SUBMIT button -->
+                    <!--TODO REMOVE THESE COMMENT AFTER PROCESSING -->
+                    <a href="#" class="login_button"
+                        onclick="document.getElementById('login_register').submit();">Connexion</a>
+
+                    <div>
+                        <span class="login_account">Pas encore de compte ? </span>
+                        <span class="login_signin" id="login_sign_up">Enregistrez vous</span>
+                    </div>
+
+                </form>
+
+
+                <form action="" method="post" class="login_create none" id="login_create">
+                    <h1 class="login_title">
+                        Créez votre Compte
+                    </h1>
+
+                    <div class="login_box">
+                        <i class="bx bx-user login_icon"></i>
+                        <input type="text" placeholder="Votre nom" class="login_input" id="username">
+                        <small>Error Message</small>
+                    </div>
+
+                    <div class="login_box">
+                        <i class="bx bx-at login_icon"></i>
+                        <input type="email" placeholder="Votre mail" class="login_input" id="email">
+                        <small>Error Message</small>
+                    </div>
+
+                    <div class="login_box">
+                        <i class="bx bx-lock login_icon"></i>
+                        <input type="password" placeholder="Mot de passe" class="login_input" id="password">
+                        <small>Error Message</small>
+                    </div>
+
+                    <div class="login_box">
+                        <i class="bx bx-lock login_icon"></i>
+                        <input type="password" placeholder="Vérifiez votre mot de passe" class="login_input"
+                            id="password2">
+                        <small>Error Message</small>
+                    </div>
+
+                    <button type="submit" class="login_button">Créez le Compte</button>
+
+                    <div>
+                        <span class="login_account">Déjà Membre ? </span>
+                        <span class="login_signup" id="login_sign_in">Connectez vous</span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <!--==========   MAIN JS   ==========-->
+    <script src="../assets/js/compte.js"></script>
+</body>
+
+</html>

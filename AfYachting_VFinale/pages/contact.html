@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ============    CSS    ================= -->
+    <link rel="stylesheet" href="../assets/css/nav_bar.css">
+
+    <link rel="stylesheet" href="../assets/css/contact.css">
+
+    <!-- ============    BOXICONS    ================= -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+
+    <title>Contact</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav_bar">
+            <div class="nav_bar_logo_container">
+                <a href="compte.html" class="nav_bar_logo">Connexion</a>
+            </div>
+
+            <div class="nav_bar_toggle" id="nav_bar_toggle">
+                <i class="bx bx-menu"></i>
+            </div>
+
+            <div class="nav_bar_menu" id="nav_bar_menu">
+                <div class="nav_bar_close" id="nav_bar_close">
+                    <i class="bx bx-x"></i>
+                </div>
+
+                <ul class="nav_bar_list">
+                    <li class="nav_bar_item"><a href="../index.html" class="nav_bar_link ">Accueil</a></li>
+                    <li class="nav_bar_item"><a href="location_selection.html" class="nav_bar_link ">Location</a></li>
+                    <li class="nav_bar_item"><a href="vente.html" class="nav_bar_link ">Vente</a></li>
+                    <li class="nav_bar_item"><a href="#" class="nav_bar_link active">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="contact">
+            <div class="contact_container">
+                <div class="contact_info">
+                    <h4 class="contact_title">
+                        Contactez Nous
+                    </h4>
+                    <p class="contact_text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus maiores
+                        obcaecati illo? Illo, repellat sequi. Optio eveniet numquam esse aut odio voluptatibus! Sunt qui
+                        doloribus dolor voluptatum commodi adipisci tempore?</p>
+                </div>
+
+                <div class="contact_data">
+                    <div class="contact_ressources">
+
+                        <form action="" method="post" class="login_register" id="login_register">
+                            <h1 class="login_title">
+                                Nous vous écoutons
+                            </h1>
+
+                            <div class="login_box">
+                                <input type="text" placeholder="Votre Nom" class="login_input">
+                            </div>
+
+                            <div class="login_box">
+                                <input type="email" placeholder="Votre Mail" class="login_input">
+                            </div>
+
+
+                            <textarea name="" id="" class="textArea" placeholder="Votre Message"></textarea>
+
+
+
+                            <button type="submit" class="login_button">Envoyer votre Message</button>
+
+                        </form>
+
+
+
+
+
+                        <!-- <div class="contact_box">
+                            <h5 class="contact_data_title"><i class='bx bx-map'></i>Adresse</h5>
+                            <p class="contact_data_adresse contact_data_text">Saint Tropez (83990, Var) France</p>
+                        </div>
+                        <div class="contact_box">
+                            <h5 class="contact_data_title"><i class='bx bx-at'></i>Email</h5>
+                            <a href="mailto:nullepart@mozilla.org"
+                                class="contact_data_mail contact_data_text">SocieteAfYachting@email.com</a>
+                        </div>
+
+                        <div class="contact_box">
+                            <h5 class="contact_data_title"><i class='bx bxs-phone'></i>Téléphone</h5>
+                            <p class="contact_data_phone contact_data_text">04 98 00 12 00</p>
+                            <p class="contact_data_phone contact_data_text">06 12 00 98 00</p>
+
+                        </div> -->
+
+                    </div>
+
+                    <div class="contact_map">
+                        <div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
+                            <div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div>
+                            <script>(function () {
+                                    var setting = { "height": 400, "width": 706, "zoom": 14, "queryString": "Saint-Tropez, France", "place_id": "ChIJR-cWgxTHzhIR37mELWMbKpE", "satellite": false, "centerCoord": [43.27209373388982, 6.6578647267259905], "cid": "0x912a1b632d84b9df", "lang": "fr", "cityUrl": "/france/saint-tropez-18117", "cityAnchorText": "Carte de Saint-Tropez, Sud de la France, France", "id": "map-9cd199b9cc5410cd3b1ad21cab2e54d3", "embed_id": "366752" };
+                                    var d = document;
+                                    var s = d.createElement('script');
+                                    s.src = 'https://1map.com/js/script-for-user.js?embed_id=366752';
+                                    s.async = true;
+                                    s.onload = function (e) {
+                                        window.OneMap.initMap(setting)
+                                    };
+                                    var to = d.getElementsByTagName('script')[0];
+                                    to.parentNode.insertBefore(s, to);
+                                })();</script><a href="https://1map.com/fr/map-embed">1 Map</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>

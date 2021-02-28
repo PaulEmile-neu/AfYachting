@@ -1,0 +1,88 @@
+/*********************************************   CLASS CSS   ******************************************/
+.sidebar{
+    background-color:#005c79;
+    position: fixed;
+    left:0;
+    width: var(--sidebar-width);
+    height: 100%;
+    transition: .5s;
+    transition-property: left;
+}
+
+.profil_container{
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.sidebar .profil_img{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    margin-bottom: 10px;
+    object-fit: cover;
+
+}
+
+.sidebar .sidebar_profile_title{
+    color: #CCC;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.sidebar a{
+    color: #fff;
+    display: block;
+    width: 100%;
+    line-height: 50px;
+    text-decoration: none;
+    padding-left: 40px;
+    transition: .5s;
+    transition-property: background-color;
+}
+
+
+.sidebar a:hover{
+    background-color: #19B3D3;
+}
+
+.sidebar i{
+    padding-right: 10px;
+
+}
+
+label #sidebar_btn{
+    z-index: 1;
+    color: #ffff;
+    position: fixed;
+    cursor: pointer;
+    left: 300px;
+    font-size: 20px;
+    margin: 5px 0;
+    transition: .5s;
+    transition-property: color;
+}
+
+label #sidebar_btn:hover{
+    color: #19B3D3;
+}
+
+#checkbox:checked ~ .sidebar{
+    left: -190px;
+}
+
+#checkbox:checked ~ .sidebar a span{
+    display: none;
+}
+
+#checkbox:checked ~.sidebar a{
+    font-size: 20px;
+    margin-left: 170px;
+    width: 80px;
+}
+
+
+#checkbox{
+    display: none;
+}

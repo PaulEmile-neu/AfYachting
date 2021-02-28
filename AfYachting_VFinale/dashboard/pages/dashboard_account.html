@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- =============    CSS    ================= -->
+    <link rel="stylesheet" href="../assets/css/dashboard_account.css">
+    <link rel="stylesheet" href="../assets/css/dashboard_sidebar.css">
+
+
+    <!-- ===============    FONT AWESOME   ============== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+
+
+    <!--==========   BOXICONS   ==========-->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <sidebar class="sidebar">
+        <div class="profil_container">
+            <img src="../assets/images/profil_pic_sidebar/profil_pic.jpg" alt="" class="profil_img">
+            <h4 class="sidebar_profile_title">Maria</h4>
+        </div>
+
+
+        <a href="dashboard_home.html"> <i class="fas fa-desktop"></i> <span>Accueil</span> </a>
+        <a href="dashboard_calendar.html"> <i class="fas fa-calendar-alt"></i><span>Calendrier</span> </a>
+        <a href="dashboard_boat.html"> <i class="fas fa-anchor"></i><span>Bateaux</span> </a>
+        <a href="#"> <i class="fas fa-users"></i> <span>Comptes</span> </a>
+        <a href="../../index.html"> <i class="fas fa-arrow-left"></i></i> <span>Site</span> </a>
+    </sidebar>
+
+    <main class="main">
+        <header class="header">
+            <div class="logo">
+                <h3 class="logo_title">AfYachting</h3>
+            </div>
+
+            <div class="logout">
+                <a href="" class="logout">Déconnexion</a>
+            </div>
+        </header>
+
+        <section class="form_account_container">
+            <form action="" method="post" class="login_create none" id="login_create">
+                <h1 class="login_title">
+                    Créez un Compte Utilisateur
+                </h1>
+
+                <div class="login_box">
+                    <i class="bx bx-user login_icon"></i>
+                    <input type="text" placeholder="Nom" class="login_input" id="username">
+                    <small>Error Message</small>
+                </div>
+
+                <div class="login_box">
+                    <i class="bx bx-at login_icon"></i>
+                    <input type="email" placeholder="Mail" class="login_input" id="email">
+                    <small>Error Message</small>
+                </div>
+
+                <div class="login_box">
+                    <i class="bx bx-lock login_icon"></i>
+                    <input type="password" placeholder="Mot de passe" class="login_input" id="password">
+                    <small>Error Message</small>
+                </div>
+
+                <div class="login_box">
+                    <i class="bx bx-lock login_icon"></i>
+                    <input type="password" placeholder="Vérifiez votre mot de passe" class="login_input" id="password2">
+                    <small>Error Message</small>
+                </div>
+
+                <div class="login_box">
+                    <i class='bx bxs-user login_icon'></i>
+                    <select name="account_type" id="account_type" class="login_input select">
+                        <option>Choisissez le type de Compte</option>
+                        <option value="Admin">Compte Admin</option>
+                        <option value="Skipper">Compte Skipper</option>
+                        <option value="invité">Compte Invité</option>
+                    </select>
+
+                </div>
+
+                <button type="submit" class="login_button">Créez le Compte</button>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+/*********************************************   VARIABLES   ******************************************/
+
+:root {
+    --sidebar-width: 15rem;
+    --header-height: 3rem;
+    --form-search-height: 3.5rem;
+    --nav-width: 324px;
+    /********************************   FONT WEIGHT ******************************************/
+    --font-medium: 400;
+    --font-semi-bold: 500;
+    --font-bold: 600;
+    /********************************     COLORS    *******************************************/
+    --first-color: #172441;
+    --first-color-light: #045ab1;
+    --second-color: #CC4B2C;
+    --second-color-dark: #a12405;
+
+    --text-color: #b8ab9a;
+     --text-color-dark: #3d3529;
+    --text-color-darken: #837057;
+    --background-color-light: #EAE7E6;
+    --background-color-lighten: #FFFAFA;
+    --background-color-light-blue: #f0f5fc;
+    /********************************   FONT-TYPO   ******************************************/
+    --body-font: 'Poppins', sans-serif;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.3rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
+    /********************************    MARGENES   ******************************************/
+    --mb-1: .5rem;
+    --mb-2: 1rem;
+    --mb-3: 1.5rem;
+    --mb-4: 2rem;
+    --mb-5: 2.5rem;
+    /********************************    Z-index    ******************************************/
+    --z-fixed: 100;
+}
+
+@media screen and(min-width: 768px) {
+     :root {
+        --h1-font-size: 2.25rem;
+        --h2-font-size: 1.5rem;
+        --h3-font-size: 1.25rem;
+        --normal-font-size: 1rem;
+        --small-font-size: .875rem;
+        --smaller-font-size: .813rem;
+    }
+}
+
+
+/*************************************     RESET HTML     **************************************/
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin:0 0 0 0;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+    background-color: var(--first-color-lighten);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+h3 {
+    font-weight: var(--font-semi-bold);
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+/*********************************************   CLASS CSS   ******************************************/
+
+.main{
+    width: calc(100% - var(--sidebar-width));
+    height: 100vh;
+    margin-left: var(--sidebar-width);
+}
+
+
+/*********************************************   HEADER  ******************************************/
+
+
+.header{
+    width: 100%;
+    height: var(--header-height);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+     background-color: #001f29;
+}
+
+.logo_title{
+    font-size: 1.3rem;
+    margin-left: .5rem;
+}
+
+.logout{
+    font-size: 1rem;
+    margin-right: 1rem;
+}
+
+.logout:hover{
+    transition: .8s;
+    color: var(--first-color);
+}
+
+.logo_title, .logout{
+    color: #FFF;
+}
+
+/*============================================      LOGIN      ===================================================*/
+
+.form_account_container{
+    width: 100%;
+    height: calc(100vh - var(--header-height));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.login{
+    display: grid;
+    grid-template-columns: 100%;
+    height: 100vh;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.login_content{
+    display: grid;
+
+}
+
+.login_img{
+    justify-self: center;
+}
+
+.login_img img{
+    width: 310px;
+    margin-top: 1.5rem;
+}
+
+.login_form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+
+}
+
+.login_create{
+    width: 40%;
+    background-color: var(--first-color-lighten);
+    padding: 1rem;
+    border-radius: 1rem;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 52, 119, 0.5);
+}
+
+
+.login_title{
+  font-size: 1rem;
+}
+
+.login_box{
+    position: relative;
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    column-gap: .5rem;
+    padding: 1.125rem 1rem;
+    background-color: #FFF;
+    margin-top: 1rem;
+    border-radius: .5rem;
+
+}
+
+.login_icon{
+    font-size: 1.5rem;
+    color: var(--first-color);
+}
+
+.login_input{
+    border: none;
+    outline: none;
+    font-size: var(--normal-font-size);
+    font-weight: 700;
+    color: var(--first-color-dark);
+    width: 100%;
+}
+
+.login_input::placeholder{
+    font-size: var(--normal-font-size);
+    font-family: var(--body-font);
+    color: var(--first-color-light);
+}
+
+.login_box.success{
+    border: solid 1px var(--success-color);
+    
+}
+
+.login_box.error{
+    border: solid 1px var(--error-color);
+}
+
+.login_box small{
+    position: absolute;
+    bottom: 0;
+    left:20%;
+    visibility: hidden;
+}
+
+.login_box.error small{
+    color: var(--error-color);
+    visibility: visible;
+}
+
+.select{
+     font-size: var(--normal-font-size);
+    font-family: var(--body-font);
+    color: var(--first-color-light);
+}
+
+.login_button{
+    display: block;
+    padding: 1rem;
+    margin: 1rem 0;
+    background-color: var(--first-color);
+    color: #FFF;
+    font-weight: 600;
+    text-align: center;
+    border-radius: .5rem;
+    border:none;
+    outline: none;
+    width: 100%;
+    cursor: pointer;
+}
+
+.login_button:hover{
+    color: var(--background-color-light-blue);
+}
+

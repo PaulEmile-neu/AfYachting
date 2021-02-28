@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+/*========================================      VARIABLES CSS      ===============================================*/
+
+:root{
+    
+    --header-height: 3rem;
+    /*====================================      COLORS     ==========================================*/
+    --first-color: #001b4d;
+    --first-color-dark: #070925;
+    --first-color-light: #7c6f49;
+    --first-color-lighten: #ebe8e2;
+
+    --success-color: #2ECC71;
+    --error-color: #E74C3C;
+
+    /*====================================      FONT TYPOS     =====================================*/
+    --body-font: 'Open Sans', sans-serif;
+    --h1-font-size: 1.5rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .818rem;
+
+}
+
+@media screen and (min-width: 768px)
+{
+    :root{
+        --normal-font-size: 1rem;
+        --small-font-size: .878rem;
+    }
+}
+
+
+/*============================================      BASE      ====================================================*/
+*,::before,::after{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    color: var(--first-color-dark);
+
+}
+
+h1{
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+
+}
+
+img{
+    max-width: 100%;
+    height: 100%;
+    display: block;
+}
+
+/*============================================      LOGIN      ===================================================*/
+.login{
+    display: grid;
+    grid-template-columns: 100%;
+    height: calc(100vh - var(--header-height));
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.login_content{
+    display: grid;
+    height: 100%;
+
+}
+
+.login_img{
+    justify-self: center;
+}
+
+.login_img img{
+    width: 310px;
+    margin-top: 1.5rem;
+}
+
+.login_form{
+    position: relative;
+    height: 400px;
+
+}
+
+.login_register, .login_create{
+    position: absolute;
+    bottom: 1rem;
+    width: 100%;
+    background-color: var(--first-color-lighten);
+    padding: 1rem;
+    border-radius: 1rem;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 52, 119, 0.5);
+    animation-duration: .4s;
+    animation-name: animate_login;
+}
+
+@keyframes animate_login{
+    0%{
+        transform: scale(1,1);
+    }
+
+    50%{
+        transform: scale(1.1,1.1);
+    }
+
+    100%{
+        transform: scale(1,1);
+    }
+}
+
+.login_title{
+  font-size: 1rem;
+}
+
+.login_box{
+    position: relative;
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    column-gap: .5rem;
+    padding: 1.125rem 1rem;
+    background-color: #FFF;
+    margin-top: 1rem;
+    border-radius: .5rem;
+
+}
+
+.login_icon{
+    font-size: 1.5rem;
+    color: var(--first-color);
+}
+
+.login_input{
+    border: none;
+    outline: none;
+    font-size: var(--normal-font-size);
+    font-weight: 700;
+    color: var(--first-color-dark);
+    width: 100%;
+}
+
+.login_input::placeholder{
+    font-size: var(--normal-font-size);
+    font-family: var(--body-font);
+    color: var(--first-color-light);
+}
+
+.login_box.success{
+    border: solid 1px var(--success-color);
+    
+}
+
+.login_box.error{
+    border: solid 1px var(--error-color);
+}
+
+.login_box small{
+    position: absolute;
+    bottom: 0;
+    left:20%;
+    visibility: hidden;
+}
+
+.login_box.error small{
+    color: var(--error-color);
+    visibility: visible;
+}
+
+
+
+.login_forgot{
+    display: block;
+    width: max-content;
+    margin-left: auto;
+    margin-top: .5rem;
+    font-size: var(--small-font-size);
+    font-weight: 600;
+    color: var(--first-color-light);
+
+}
+
+.login_button{
+    display: block;
+    padding: 1rem;
+    margin: 2rem 0;
+    background-color: var(--first-color);
+    color: #FFF;
+    font-weight: 600;
+    text-align: center;
+    border-radius: .5rem;
+    transition: .3s;
+    border:none;
+    outline: none;
+    width: 100%;
+    cursor: pointer;
+}
+
+.login_button:hover{
+    background-color: var(--first-color-dark);
+}
+
+.login_account, .login_signin, .login_signup{
+    font-weight: 600;
+    font-size: var(--small-font-size);
+}
+
+.login_account{
+    color: var(--first-color-dark);
+}
+
+.login_signin, .login_signup{
+    color: var(--first-color);
+    cursor: pointer;
+}
+
+.login_social{
+    margin-top: 2rem;
+    display: none;
+}
+
+.login_social-icon{
+    font-size: 1.5rem;
+    color: var(--first-color-dark);
+    margin: 0 1.5rem;
+    
+}
+
+
+
+/*============================================      SHOW LOGIN      ===================================================*/
+
+.block{
+    display: block;
+
+}
+
+
+/*============================================      HIDE LOGIN      ===================================================*/
+.none{
+    display: none;
+}
+
+
+/*============================================     MEDIA QUERIES      ===================================================*/
+
+@media screen and (min-width: 576px)
+{
+    .login_form{
+        width: 348px;
+        justify-self: center;
+    }
+}
+
+@media screen and (min-width: 1024px)
+{
+    .login{
+         height: calc(100vh - var(--header-height));
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .login_content{
+        grid-template-columns: repeat(2,max-content);
+        justify-content: center;
+        align-items: center;
+        margin-left: 10rem;
+        height: 90%;
+
+    }
+
+    .login_img{
+        display: flex;
+        width: 600px;
+        height: 500px;
+        padding-left: 1rem;
+    }
+
+    .login_img img{
+        width: 100%;
+        margin-top: 0;
+        object-fit: cover;
+        border-radius: 1rem;
+    }
+
+    .login_register, .login_create{
+        left: -11rem;
+    }
+
+    .login_register{
+        bottom: 1rem;
+    }
+    .login_create{
+        bottom: -3.3rem;
+    }
+
+    .login_social{
+        display: block;
+    }
+}

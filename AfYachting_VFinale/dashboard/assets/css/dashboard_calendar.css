@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+/*********************************************   VARIABLES   ******************************************/
+
+:root {
+    --sidebar-width: 15rem;
+    --header-height: 3rem;
+    --form-search-height: 3.5rem;
+    --nav-width: 324px;
+    /********************************   FONT WEIGHT ******************************************/
+    --font-medium: 400;
+    --font-semi-bold: 500;
+    --font-bold: 600;
+    /********************************     COLORS    *******************************************/
+    --first-color: #172441;
+    --first-color-light: #045ab1;
+    --second-color: #CC4B2C;
+    --second-color-dark: #a12405;
+
+    --text-color: #b8ab9a;
+     --text-color-dark: #3d3529;
+    --text-color-darken: #837057;
+    --background-color-light: #EAE7E6;
+    --background-color-lighten: #FFFAFA;
+    --background-color-light-blue: #f0f5fc;
+    /********************************   FONT-TYPO   ******************************************/
+    --body-font: 'Poppins', sans-serif;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.3rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
+    /********************************    MARGENES   ******************************************/
+    --mb-1: .5rem;
+    --mb-2: 1rem;
+    --mb-3: 1.5rem;
+    --mb-4: 2rem;
+    --mb-5: 2.5rem;
+    /********************************    Z-index    ******************************************/
+    --z-fixed: 100;
+}
+
+@media screen and(min-width: 768px) {
+     :root {
+        --h1-font-size: 2.25rem;
+        --h2-font-size: 1.5rem;
+        --h3-font-size: 1.25rem;
+        --normal-font-size: 1rem;
+        --small-font-size: .875rem;
+        --smaller-font-size: .813rem;
+    }
+}
+
+
+/*************************************     RESET HTML     **************************************/
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin:0 0 0 0;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+    background-color: var(--first-color-lighten);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+h3 {
+    font-weight: var(--font-semi-bold);
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/*********************************************   CLASS CSS   ******************************************/
+
+.main{
+    width: calc(100% - var(--sidebar-width));
+    height: 100vh;
+    margin-left: var(--sidebar-width);
+}
+
+
+/*********************************************   HEADER  ******************************************/
+.header{
+    width: 100%;
+    height: var(--header-height);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+     background-color: #001f29;
+}
+
+.logo_title{
+    font-size: 1.3rem;
+    margin-left: .5rem;
+}
+
+.logout{
+    font-size: 1rem;
+    margin-right: 1rem;
+}
+
+.logout:hover{
+    transition: .8s;
+    color: var(--first-color);
+}
+
+.logo_title, .logout{
+    color: #FFF;
+}
+
+/*********************************************   LINK    ******************************************/
+.link_container{
+    width: 100%;
+    height: var(--form-search-height);
+    background-color: var(--background-color-lighten);
+}
+
+.link_box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+}
+
+.link{
+    font-size: 1rem;
+    color: var(--text-color-dark);
+    font-weight: 600;
+}

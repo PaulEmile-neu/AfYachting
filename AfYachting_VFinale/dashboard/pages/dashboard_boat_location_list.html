@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- =============    CSS    ================= -->
+    <link rel="stylesheet" href="../assets/css/dashboard_boat_location_list.css">
+    <link rel="stylesheet" href="../assets/css/dashboard_sidebar.css">
+
+    <!-- ===============    FONT AWESOME   ============== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+</head>
+
+<body>
+    <sidebar class="sidebar">
+        <div class="profil_container">
+            <img src="../assets/images/profil_pic_sidebar/profil_pic.jpg" alt="" class="profil_img">
+            <h4 class="sidebar_profile_title">Maria</h4>
+            <p>Super Admin</p>
+        </div>
+
+
+        <a href="#"> <i class="fas fa-desktop"></i> <span>Accueil</span> </a>
+        <a href="dashboard_calendar.html"> <i class="fas fa-calendar-alt"></i><span>Calendrier</span> </a>
+        <a href="dashboard_boat.html"> <i class="fas fa-anchor"></i><span>Bateaux</span> </a>
+        <a href="dashboard_account.html"> <i class="fas fa-users"></i> <span>Comptes</span> </a>
+        <a href="../../index.html"> <i class="fas fa-arrow-left"></i> <span>Site</span> </a>
+    </sidebar>
+
+
+    <main class="main">
+        <header class="header">
+            <div class="logo">
+                <h3 class="logo_title">AfYachting</h3>
+            </div>
+
+            <div class="logout">
+                <a href="" class="logout">Déconnexion</a>
+            </div>
+        </header>
+
+        <section class="form_search_container">
+            <form action="" class="form_search">
+                <div class="form_search_box">
+                    <i class="fas fa-arrow-left icon_link"></i> <a href="dashboard_boat.html" class="boat_link">Retour à
+                        la page
+                        précédente</a>
+                </div>
+
+                <div class="form_search_box">
+                    <input type="search" name="" id="" placeholder="chercher un bateau">
+                    <button type="submit" class="search_button">Chercher</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="location_result" id="location_result">
+            <h1 class="location_title">Bateaux en Location</h1>
+            <div class="location_container">
+
+                <div class="location_item ">
+                    <img src="../../assets/images/location/location1.jpg" alt="" class="location_img">
+                    <div class="location_description">
+                        <div class="location_price">
+                            <p class="location_price_text">
+                                345 € par jours
+                            </p>
+
+                        </div>
+                        <h6 class="description_title">Skipper Dock</h6>
+                        <p class="description_content">"2 places pour une traversée de Saint-Tropez en couple"</p>
+
+                        <div class="description_link">
+                            <button type="submit" class="description_link_action delete">Supprimer</button>
+                            <button type="submit" class="description_link_action update">Modifier</button>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+                <div class="location_item">
+                    <img src="../../assets/images/location/location2.jpg" alt="" class="location_img">
+                    <div class="location_description">
+                        <div class="location_price">
+                            <p class="location_price_text">
+                                345 € par jours
+                            </p>
+
+                        </div>
+                        <h6 class="description_title">Sailor Moon</h6>
+
+                        <p class="description_content">"Confort et Sérénité pour une après midi détente"
+                        </p>
+
+                        <div class="description_link">
+                            <button type="submit" class="description_link_action delete">Supprimer</button>
+                            <button type="submit" class="description_link_action update">Modifier</button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="location_item">
+                    <img src="../../assets/images/location/location3.jpg" alt="" class="location_img">
+                    <div class="location_description">
+                        <div class="location_price">
+                            <p class="location_price_text">
+                                345 € par jours
+                            </p>
+
+                        </div>
+                        <h6 class="description_title">Nautilus</h6>
+
+                        <p class="description_content">"Pour les amateurs de la voile"</p>
+
+                        <div class="description_link">
+                            <button type="submit" class="description_link_action delete">Supprimer</button>
+                            <button type="submit" class="description_link_action update">Modifier</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="location_item">
+                    <img src="../../assets/images/location/location4.jpg" alt="" class="location_img">
+                    <div class="location_description">
+                        <div class="location_price">
+                            <p class="location_price_text">
+                                345 € par jours
+                            </p>
+
+                        </div>
+                        <h6 class="description_title">Hors Bord 400ch</h6>
+
+                        <p class="description_content">"Parfait pour un voyage dans la baie"</p>
+
+                        <div class="description_link">
+                            <button type="submit" class="description_link_action delete">Supprimer</button>
+                            <button type="submit" class="description_link_action update">Modifier</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="location_item">
+                    <img src="../../assets/images/location/location5.jpg" alt="" class="location_img">
+                    <div class="location_description">
+                        <div class="location_price">
+                            <p class="location_price_text">
+                                345 € par jours
+                            </p>
+
+                        </div>
+                        <h6 class="description_title">Lagoon Bay</h6>
+
+                        <p class="description_content">"Rapide et spacieux pour plus de confort"</p>
+
+                        <div class="description_link">
+                            <button type="submit" class="description_link_action delete">Supprimer</button>
+                            <button type="submit" class="description_link_action update">Modifier</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="location_item">
+                    <img src="../../assets/images/location/location6.jpg" alt="" class="location_img">
+                    <div class="location_description">
+                        <div class="location_price">
+                            <p class="location_price_text">
+                                345 € par jours
+                            </p>
+
+                        </div>
+                        <h6 class="description_title">Romantic Sailor</h6>
+
+                        <p class="description_content">"Vitesse et Souplesse toutes options comprises"</p>
+
+                        <div class="description_link">
+                            <button type="submit" class="description_link_action delete">Supprimer</button>
+                            <button type="submit" class="description_link_action update">Modifier</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+</body>
+
+</html>

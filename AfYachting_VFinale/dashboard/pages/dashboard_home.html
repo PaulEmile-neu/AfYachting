@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <!-- ==========    CSS    ============ -->
+    <link rel="stylesheet" href="../assets/css/dashboard_home.css">
+    <link rel="stylesheet" href="../assets/css/dashboard_sidebar.css">
+
+
+    <!-- ===============    FONT AWESOME   ============== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+</head>
+
+<body>
+    <sidebar class="sidebar">
+        <div class="profil_container">
+            <img src="../assets/images/profil_pic_sidebar/profil_pic.jpg" alt="" class="profil_img">
+            <h4 class="sidebar_profile_title">Maria</h4>
+            <p>Super Admin</p>
+        </div>
+
+
+        <a href="#"> <i class="fas fa-desktop"></i> <span>Accueil</span> </a>
+        <a href="dashboard_calendar.html"> <i class="fas fa-calendar-alt"></i><span>Calendrier</span> </a>
+        <a href="dashboard_boat.html"> <i class="fas fa-anchor"></i><span>Bateaux</span> </a>
+        <a href="dashboard_account.html"> <i class="fas fa-users"></i> <span>Comptes</span> </a>
+        <a href="../../index.html"> <i class="fas fa-arrow-left"></i></i> <span>Site</span> </a>
+    </sidebar>
+
+    <main class="main">
+        <header class="header">
+            <div class="logo">
+                <h3 class="logo_title">AfYachting</h3>
+            </div>
+
+            <div class="logout">
+                <a href="" class="logout">Déconnexion</a>
+            </div>
+        </header>
+        <section class="link_container">
+            <div class="link_box">
+                <a href="dashboard_account.html" class="link">Modifier votre Compte</a>
+
+                <a href="dashboard_boat_list.html" class="link">Supprimer votre Compte</a>
+            </div>
+        </section>
+        <section class="container">
+            <div class="card_container">
+                <div class="card_box">
+                    <h3 class="card_title">Visites</h3>
+                    <p class="card_data">123</p>
+                </div>
+                <div class="card_box">
+                    <h3 class="card_title">Clients</h3>
+                    <p class="card_data">56</p>
+                </div>
+                <div class="card_box">
+                    <h3 class="card_title">Revenus Générés</h3>
+                    <p class="card_data">€6K</p>
+                </div>
+                <div class="card_box">
+                    <h3 class="card_title">Bateaux en location</h3>
+                    <p class="card_data">120</p>
+                </div>
+                <div class="card_box">
+                    <h3 class="card_title">Bateaux en vente</h3>
+                    <p class="card_data">5</p>
+                </div>
+                <div class="card_box">
+                    <h3 class="card_title">Skippers</h3>
+                    <p class="card_data">8</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="members_container">
+            <div class="members_tab">
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="col">Nom</th>
+                            <th scope="col">Role</th>
+                            <th scope="col">Société afiliée</th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">John Doe</th>
+                            <td>Skipper</td>
+                            <td>AfYachting</td>
+                            <td class="action_account"> <button type="submit" class="delete_account">Supprimer</button>
+                            </td>
+
+                            <td class="action_account"> <button type="submit" class="update_account">Modifier</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Marcus Dean</th>
+                            <td>Skipper</td>
+                            <td>Societé-X</td>
+                            <td class="action_account"> <button type="submit" class="delete_account">Supprimer</button>
+                            </td>
+
+                            <td class="action_account"> <button type="submit" class="update_account">Modifier</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Patrick Swan</th>
+                            <td>Capitaine</td>
+                            <td>AfYachting</td>
+                            <td class="action_account"> <button type="submit" class="delete_account">Supprimer</button>
+                            </td>
+
+                            <td class="action_account"> <button type="submit" class="update_account">Modifier</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Antoine Minok</th>
+                            <td>Skipper</td>
+                            <td>societé-X</td>
+                            <td class="action_account"> <button type="submit" class="delete_account">Supprimer</button>
+                            </td>
+
+                            <td class="action_account"> <button type="submit" class="update_account">Modifier</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Paul Derman</th>
+                            <td>Associé</td>
+                            <td>societé-X</td>
+                            <td class="action_account"> <button type="submit" class="delete_account">Supprimer</button>
+                            </td>
+
+                            <td class="action_account"> <button type="submit" class="update_account">Modifier</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Manon Lina</th>
+                            <td>Skipper</td>
+                            <td>AfYachting</td>
+                            <td class="action_account"> <button type="submit" class="delete_account">Supprimer</button>
+                            </td>
+
+                            <td class="action_account"> <button type="submit" class="update_account">Modifier</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </section>
+    </main>
+
+</body>
+
+</html>

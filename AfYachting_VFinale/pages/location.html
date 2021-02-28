@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ============    CSS    ================= -->
+    <link rel="stylesheet" href="../assets/css/nav_bar.css">
+    <link rel="stylesheet" href="../assets/css/location.css">
+    <link rel="stylesheet" href="../assets/css/footer.css">
+
+    <!-- ============    BOXICONS    ================= -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Location</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav_bar">
+            <div class="nav_bar_logo_container">
+                <a href="compte.html" class="nav_bar_logo">Connexion</a>
+            </div>
+
+            <div class="nav_bar_toggle" id="nav_bar_toggle">
+                <i class="bx bx-menu"></i>
+            </div>
+
+            <div class="nav_bar_menu" id="nav_bar_menu">
+                <div class="nav_bar_close" id="nav_bar_close">
+                    <i class="bx bx-x"></i>
+                </div>
+
+                <ul class="nav_bar_list">
+                    <li class="nav_bar_item"><a href="../index.html" class="nav_bar_link ">Accueil</a></li>
+                    <li class="nav_bar_item"><a href="#" class="nav_bar_link active">Location</a></li>
+                    <li class="nav_bar_item"><a href="vente.html" class="nav_bar_link ">Vente</a></li>
+                    <li class="nav_bar_item"><a href="contact.html" class="nav_bar_link">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="location_caption">
+            <div class="caption_img">
+                <img data-src="../assets/images/location/location_header_2.jpg" alt="">
+            </div>
+            <div class="caption">
+                <h4 class="caption_title">Louez un Bateau</h4>
+                <p class="caption_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, praesentium!</p>
+            </div>
+
+            <div class="form">
+                <form action="" method="post" class="form_boat">
+                    <div class="form_input_content">
+                        <div class="form_input_content_container">
+
+                            <div class="form_input_box">
+                                <div class="form_box">
+                                    <label for="boat_type" class="form_label">Type de bateaux</label>
+                                    <input type=text list=boat_type class="input_form">
+                                    <datalist id="boat_type" name="boat_type">
+                                        <option>Coque Rigide</option>
+                                        <option>Prestige</option>
+                                        <option>Coque semi rigide</option>
+                                    </datalist>
+                                </div>
+
+                                <div class="form_box">
+                                    <label for="boat_motor" class="form_label">Puissance du Moteur</label>
+                                    <input type=text list=boat_motor class="input_form">
+                                    <datalist id="boat_motor" name="boat_motor">
+                                        <option>340 ch</option>
+                                        <option>470 ch</option>
+                                        <option>660 ch</option>
+                                    </datalist>
+                                </div>
+                            </div>
+
+                            <div class="form_input_box">
+                                <div class="form_box">
+                                    <label for="range_price" class="form_label">Prix <span id="value"></span></label>
+                                    <input type="range" name="" class="range_slider" id="range_price" min="100"
+                                        max="500" value="300">
+                                </div>
+
+                                <div class="form_box">
+                                    <label for="range_length" class="form_label">Longueur <span
+                                            id="length"></span></label>
+                                    <input type="range" name="" class="range_slider" id="range_length" min="2" max="6">
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="input_submit">
+                        <a href="#location_result" class="submit_btn">Chercher</a>
+                    </div>
+
+                </form>
+
+            </div>
+        </section>
+
+        <section class="location_result" id="location_result">
+            <h1 class="location_title">Nos Offres</h1>
+            <div class="location_container">
+
+                <div class="location_item ">
+                    <img data-src="../assets/images/location/location1.jpg" alt="" class="location_img">
+                    <div class="location_description">
+                        <div class="location_price">
+                            <p class="location_price_text">
+                                345 € par jours
+                            </p>
+
+                        </div>
+                        <h6 class="description_title">Skipper Dock</h6>
+                        <p class="description_content">"2 places pour une traversée de Saint-Tropez en couple"</p>
+
+                        <a href="payment.html" class="description_link">Réserver Maintenant</a>
+                    </div>
+
+
+                </div>
+
+                <div class="location_item">
+                    <img data-src="../assets/images/location/location2.jpg" alt="" class="location_img">
+                    <div class="location_description">
+                        <div class="location_price">
+                            <p class="location_price_text">
+                                345 € par jours
+                            </p>
+
+                        </div>
+                        <h6 class="description_title">Sailor Moon</h6>
+
+                        <p class="description_content">"Confort et Sérénité pour une après midi détente"
+                        </p>
+
+                        <a href="payment.html" class="description_link">Réserver Maintenant</a>
+
+                    </div>
+
+                </div>
+
+                <div class="location_item">
+                    <img data-src="../assets/images/location/location3.jpg" alt="" class="location_img">
+                    <div class="location_description">
+                        <div class="location_price">
+                            <p class="location_price_text">
+                                345 € par jours
+                            </p>
+
+                        </div>
+                        <h6 class="description_title">Nautilus</h6>
+
+                        <p class="description_content">"Pour les amateurs de la voile"</p>
+
+                        <a href="payment.html" class="description_link">Réserver Maintenant</a>
+                    </div>
+                </div>
+
+                <div class="location_item">
+                    <img data-src="../assets/images/location/location4.jpg" alt="" class="location_img">
+                    <div class="location_description">
+                        <div class="location_price">
+                            <p class="location_price_text">
+                                345 € par jours
+                            </p>
+
+                        </div>
+                        <h6 class="description_title">Hors Bord 400ch</h6>
+
+                        <p class="description_content">"Parfait pour un voyage dans la baie"</p>
+
+                        <a href="payment.html" class="description_link">Réserver Maintenant</a>
+                    </div>
+                </div>
+
+                <div class="location_item">
+                    <img data-src="../assets/images/location/location5.jpg" alt="" class="location_img">
+                    <div class="location_description">
+                        <div class="location_price">
+                            <p class="location_price_text">
+                                345 € par jours
+                            </p>
+
+                        </div>
+                        <h6 class="description_title">Lagoon Bay</h6>
+
+                        <p class="description_content">"Rapide et spacieux pour plus de confort"</p>
+
+                        <a href="payment.html" class="description_link">Réserver Maintenant</a>
+                    </div>
+                </div>
+
+                <div class="location_item">
+                    <img data-src="../assets/images/location/location6.jpg" alt="" class="location_img">
+                    <div class="location_description">
+                        <div class="location_price">
+                            <p class="location_price_text">
+                                345 € par jours
+                            </p>
+
+                        </div>
+                        <h6 class="description_title">Romantic Sailor</h6>
+
+                        <p class="description_content">"Vitesse et Souplesse toutes options comprises"</p>
+
+                        <a href="payment.html" class="description_link">Réserver Maintenant</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer_container">
+            <div class="footer_logo">
+                <img src="../assets/images/footer/boat_illustration.png" alt="">
+                <h3 class="footer_title">AfYachting</h3>
+            </div>
+            <div class="footer_contact">
+
+                <div class="footer_contact_box">
+                    <p class="footer_contact_text">Téléphone : <span>06.02.10.24.56</span></p>
+                </div>
+
+                <div class="footer_contact_box">
+                    <a href="mailto:email@email.com" class="contact_text">Mail : <span>email@email.com</span>
+                    </a>
+                </div>
+            </div>
+            <div class="footer_social">
+
+            </div>
+        </div>
+        <div class="footer_copyright">
+            <h1 class="footer_copyright_title"><a href="" class="brand">AfYachting</a> &copy; 2021 Tous droits réservés
+                <a href="" class="c_gen">Conditions générales</a> et <a href="" class="privacy">Règles de
+                    confientialité</a>
+            </h1>
+        </div>
+    </footer>
+
+    <script src="../assets/js/location.js" async></script>
+    <script src="../assets/js/lazy_load.js" async></script>
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>
